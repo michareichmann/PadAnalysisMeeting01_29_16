@@ -1,0 +1,234 @@
+% BEGIN PREAMBEL
+\documentclass[9pt]{beamer}
+\usepackage[british]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{multimedia}
+\input{extrapackages}
+\input{newcommands}
+\usetheme{Boadilla}
+\graphicspath{ {Pics/} }
+\usecolortheme{beaver}
+\useoutertheme{miniframes}
+\beamertemplatenavigationsymbolsempty
+\makeindex
+\title[Analysis]{Discussion of the Pad Analysis}
+\author[M. Reichmann]{Michael Reichmann}
+\institute[\textbf{\textit{ETH}}\scalebox{.6}{\textit{Z\"{u}rich}}]{Swiss Federal Institute of Technology Zurich}
+% END PREAMBEL
+\begin{document}
+% ============================
+% TITLE PAGE
+% ============================
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=6cm]{CutContributions}
+	\end{center}
+	\begin{alertblock}{
+		\begin{center}
+			\textbf{Meeting \today}
+		\end{center}}
+		\vspace*{10pt}
+		\begin{center}\small
+		Michael Reichmann
+		\end{center}\normalsize
+	\end{alertblock}
+\end{frame}
+% ============================
+% TABLE OF CONTENTS
+% ============================
+\begin{frame}[allowframebreaks]
+	\frametitle{Table of contents}
+	\tableofcontents   % [pausesections]
+\end{frame}
+% ====================================================================================
+% SLIDES
+% ====================================================================================
+\section{Beam Profile}
+% ============================
+\subsection{Profiles}
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=4cm]{DiamondHitmap}
+	\end{center}
+
+	\begin{center}
+		\begin{minipage}{4cm}
+			\centering
+			\includegraphics[width=4cm]{BeamProfileX}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{4cm}
+			\centering
+			\includegraphics[width=4cm]{BeamProfileY}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% new frame ============================
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{BeamProfileXFit}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{BeamProfileYFit}
+		\end{minipage}\no\s
+	\end{center}
+	\begin{itemize}
+		\item looking for center of the mask ($\approx$ center of red lines)
+		\item fit Gauss in which range around this center?? 
+		\item plots for 60\% of the the red lines 
+	\end{itemize}
+
+\end{frame}
+% new frame ============================
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{BeamProfChi2sX}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{BeamProfChi2sY}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% new frame ============================
+% ============================
+\subsection{Rate dependence}
+\begin{frame}
+	\frametitle{Rate dependence}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{AllBeamProfilesX}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{AllBeamProfilesY}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% new frame ============================
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=10cm]{BeamProfileOverview}
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{BeamProfileSigmaY40}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{BeamProfileMeanY40}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% ====================================================================================
+\section{Pulser}
+% ============================
+\subsection{Pulser}
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=5.5cm]{SignalDistribution}
+	\end{center}
+\end{frame}
+% ============================
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserMeanTrueTrue}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserMeanFalseFalse}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% ============================
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserMeanTrueFalse}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserMeanFalseTrue}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% ============================
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserSigmaTrueTrue}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserSigmaFalseFalse}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% ============================
+\begin{frame}
+	\begin{center}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserSigmaTrueFalse}
+		\end{minipage}
+		\hspace*{2pt}
+		\begin{minipage}{5.5cm}
+			\centering
+			\includegraphics[width=5.5cm]{PulserSigmaFalseTrue}
+		\end{minipage}\no\s
+	\end{center}
+\end{frame}
+% ============================
+% ====================================================================================
+\section{Pulse height distribution}
+\subsection{Pulse height distribution}
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=8cm]{PHEvolutionOverview20000}
+	\end{center}
+	\begin{center}
+		\includegraphics[width=8cm]{PHEvolutionOverview10000}
+	\end{center}
+\end{frame}
+% ============================
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=8cm]{PHEvolutionOverview5000}
+	\end{center}
+	\begin{center}
+		\includegraphics[width=8cm]{PHEvolutionOverview1000}
+	\end{center}
+\end{frame}
+% ============================
+\begin{frame}
+	\begin{center}
+		\includegraphics[width=8cm]{PHEvolutionOverview500}
+	\end{center}
+	\begin{center}
+		\includegraphics[width=8cm]{PHEvolutionOverview100}
+	\end{center}
+\end{frame}
+% ============================
+% DOCUMENT END
+\end{document}
+

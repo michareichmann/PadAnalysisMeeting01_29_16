@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {british}
+\beamer@sectionintoc {1}{Beam Profile}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Profiles}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Rate dependence}{7}{0}{1}
+\beamer@sectionintoc {2}{Pulse height distribution}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Pulse height distribution}{10}{0}{2}
